@@ -4,37 +4,7 @@ A free, public software-engineering learning site with paths from student and SD
 
 ![Interview Studio overview](docs/overview.png)
 
-## Start in 30 seconds
 
-Unzip the download. Open `index.html` in a modern browser. All lessons, quizzes, and labs are bundled locally. For the most predictable local storage, clipboard, and download behavior, serve the folder:
-
-```sh
-node serve.cjs
-```
-
-Open `http://127.0.0.1:4173/`. Node is optional for local preview and unnecessary on your hosting platform. The lesson examples are read/copy/download examples, not a browser-based C++ or Java compiler.
-
-## Publish free on GitHub Pages
-
-1. Create a **public** GitHub repository, such as `interview-studio`.
-2. Upload the **contents of the extracted folder**, with `index.html` and `assets/` at the repository root. Upload the files, not the ZIP itself.
-3. Commit to `main`.
-4. In repository **Settings → Pages**, choose **Deploy from a branch**, then **main** and **/(root)**. Save.
-5. Wait for the deployment, then open the URL shown there, typically `https://YOUR-USERNAME.github.io/interview-studio/`.
-
-The owner needs a GitHub account to publish. **Visitors do not need an account.** GitHub Pages supports public repositories on GitHub Free, subject to its published limits. All asset links are relative and navigation uses hash routes, so project subpaths and lesson-link refreshes work without rewrite rules.
-
-Official references: [Create a Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) · [Choose the publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). Hosting instructions checked September 17, 2026.
-
-For other static hosts, publish this folder with **no build command** and the repository root as the output directory. No server runtime is needed. Check the host’s current free-plan terms before deploying.
-
-### If the hosted site is blank or returns 404
-
-- Confirm `index.html` is at the selected publishing root, not inside another nested folder.
-- Confirm `assets/app.js`, `assets/curriculum.js`, and `assets/styles.css` were uploaded with exact lowercase names.
-- Check the Pages deployment status and allow time for publication.
-- Use the exact URL from Pages settings. A project site normally includes the repository name.
-- Refresh after deployment. This project has no service worker that can pin old content.
 
 ## What’s included
 
@@ -71,13 +41,6 @@ There are no analytics, external fonts, CDN dependencies, login flows, or remote
 
 Study checkmarks and quiz scores are separate. A 5/5 quiz checks recall; project evidence and explanation matter more than checking boxes.
 
-### Upgrading from edition 2
-
-Deploy to the same origin to preserve your existing notes, studied flags, bookmarks, and quiz scores. The original 95 lesson IDs and all five quiz questions per lesson retain their identity and order. This edition adds an optional `practiceChecks` field within the existing version-2 progress format. Export a backup before updating.
-
-### Upgrading from edition 1
-
-Replace the deployed source files with this edition, keeping the same hosting origin. Existing lesson IDs and the storage key remain stable. Notes, bookmarks, study status, and theme are preserved. Previous three-question scores appear as **Previous edition** results; the new five-question quizzes begin unattempted. Both version 1 and version 2 JSON backups can be imported. Export a backup before replacing a deployment. If you move to a different origin/device, import your backup there.
 
 ## Curriculum
 
