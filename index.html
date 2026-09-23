@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152a2a">
+  <meta name="description" content="A free software engineering field guide from student to architect: C++ algorithms, Java design, architecture, CS fundamentals, visual lessons, quizzes, and labs. No account needed.">
+  <title>Interview Studio · Software engineering field guide</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/curriculum.js" defer></script>
+  <script src="assets/course-outline.js" defer></script>
+  <script src="assets/learning-paths.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+    <a class="brand" href="#/home" aria-label="Interview Studio home"><span class="brand-mark">i<span>↗</span></span><span>interview<span class="brand-second">studio<span class="brand-dot">.</span></span></span></a>
+    <div class="sidebar-caption">YOUR NEXT CHAPTER</div>
+    <nav id="primary-nav"></nav>
+    <div class="sidebar-caption">LEARNING TRACKS</div>
+    <nav id="track-nav"></nav>
+    <div class="sidebar-bottom">
+      <div class="progress-label"><span>Your progress</span><strong id="total-progress">0 / 140</strong></div>
+      <div class="meter"><span id="total-meter"></span></div>
+      <p>Small steps. Strong foundations.</p>
+      <a href="#/settings" class="subtle-link">Progress & preferences <span>↗</span></a>
+    </div>
+  </aside>
+  <div class="mobile-scrim" id="scrim" hidden></div>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-button mobile-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <div class="breadcrumb" id="breadcrumb">The Software engineering field guide</div>
+      <div class="topbar-actions"><button class="search-trigger" id="search-trigger"><span>⌕</span> <span class="search-label">Find a topic</span><kbd>/</kbd></button><button class="icon-button" id="theme-toggle" aria-label="Switch color theme">◐</button><span class="open-tag">FREE & OPEN</span></div>
+    </header>
+    <div id="storage-warning" class="notice" role="status" hidden>Browser storage is unavailable. Your progress works for this session; export it before leaving.</div>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>Built for understanding. Practiced for interviews.</span><span>C++17 · Java 17 · No account required</span></footer>
+  </div>
+  <dialog id="search-dialog" aria-labelledby="search-heading">
+    <div class="dialog-head"><h2 id="search-heading">Find your next topic</h2><button class="icon-button" id="close-search" aria-label="Close search">×</button></div>
+    <label class="sr-only" for="search-input">Search all lessons</label><input id="search-input" type="search" placeholder="Try paging, TCP, SQL, caching, or SOLID…" autocomplete="off">
+    <p class="muted small" id="search-count" aria-live="polite"></p><div id="search-results"></div>
+  </dialog>
+  <dialog id="visual-dialog" aria-labelledby="visual-heading"><div class="dialog-head"><h2 id="visual-heading">Visual model</h2><button class="icon-button" id="close-visual" aria-label="Close diagram">×</button></div><div class="actions visual-actions"><button class="button" id="visual-zoom" aria-pressed="false">View full size</button><span class="small muted">Scroll the full-size diagram to inspect its labels.</span></div><div class="visual-scroll" tabindex="0" aria-label="Diagram viewport"><img id="visual-image" alt=""></div><p id="visual-description"></p></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <noscript><p class="notice">Enable JavaScript to use lessons, quizzes, and local progress. This site runs entirely in your browser.</p></noscript>
+</body>
+</html>
